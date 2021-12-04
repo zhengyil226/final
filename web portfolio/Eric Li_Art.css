@@ -1,0 +1,136 @@
+.content {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.navBar {
+    display: flex;
+    position: fixed;
+    width: 20%;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.about, .hci, .archi, .art, .other, .resume{
+    margin-bottom: 40px;
+    margin-left: 40%;
+    font-family: 'Avenir LT Std';
+    font-size: 16px;
+    font-weight: 350;
+    text-decoration: none;
+    color: black;
+}
+
+.about:hover, .hci:hover, .archi:hover, .art:hover, .other:hover, .resume:hover, .back:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.art {
+    font-weight: 750;
+}
+
+.line1{
+    margin-left: 40%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #D2D2D2;
+    width: 120px;
+    height: 0px;
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cate1, .cate2, .cate3, .cate4, .back {
+    flex: 100%;
+    font-family: 'Avenir LT Std';
+    font-size: 18px;
+    font-weight: 350;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.proj1, .proj2, .proj3, .proj4, .proj5, 
+.proj6, .proj7, .proj8, .proj9, .proj10, 
+.proj11, .proj12, .proj13, .proj14, .proj15, 
+.proj16, .proj17, .proj18, .proj19, .proj20, 
+.proj21, .proj22, .proj23, .proj24, .proj25, 
+.proj26, .proj27, .proj28, .proj29, .proj30, 
+.proj31, .proj32, .proj33, .proj34, .proj35, 
+.proj36, .proj37, .proj38, .proj39, .proj40, 
+.proj41, .proj42, .proj43, .proj44, .proj45, 
+.proj46, .proj47, .proj48, .proj49, .proj50 {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+
+.back{
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    .navBar{
+        display: none;
+    }
+    .content{
+        margin-left: 10%;
+    }
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.2); 
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+body::-webkit-scrollbar {
+  width: 24px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #DFDFDF;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 8px solid white;  /* creates padding around scroll thumb */
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

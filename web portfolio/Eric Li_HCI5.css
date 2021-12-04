@@ -1,0 +1,167 @@
+.content {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.navBar {
+    display: flex;
+    position: fixed;
+    width: 20%;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.about, .hci, .archi, .art, .other, .resume{
+    margin-bottom: 40px;
+    margin-left: 40%;
+    font-family: 'Avenir LT Std';
+    font-size: 16px;
+    font-weight: 350;
+    text-decoration: none;
+    color: black;
+}
+
+.about:hover, .hci:hover, .archi:hover, .art:hover, .other:hover, .resume:hover, .back:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.hci {
+    font-weight: 750;
+}
+
+.line1{
+    margin-left: 40%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #D2D2D2;
+    width: 120px;
+    height: 0px;
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.title,.back {
+    flex: 100%;
+    font-family: 'Avenir LT Std';
+    font-size: 18px;
+    font-weight: 350;
+}
+
+.back {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.title{
+    background-color: white;
+    position: sticky;
+    padding: 20px;
+    top: 0;
+}
+
+.title img{
+    height: 20px;
+}
+
+#arrow{
+    text-decoration: none;
+}
+
+#name{
+    margin-left: 28%;
+    font-weight: 750;
+    margin-right: -5px;
+}
+
+.title img, #name, #desc{
+    display: inline-block;
+}
+
+.back:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.back{
+    margin-left: 38%;
+}
+
+.page1, .page2, .page3, .page4, .page5, .page6, .page7, .page8{
+    flex: 100%;
+}
+
+.page1 {
+    margin-top: 10px;
+}
+
+.page1 img, .page2 img, .page3 img, .page4 img, .page5 img, .page6 img, .page7 img, .page8 img{
+    width: 84%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    box-shadow: 2px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 1000px) {
+    .navBar{
+        display: none;
+    }
+    .content{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 800px) {
+    .title{
+        display: none;
+    }
+}
+
+body::-webkit-scrollbar {
+  width: 24px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #DFDFDF;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 8px solid white;  /* creates padding around scroll thumb */
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}

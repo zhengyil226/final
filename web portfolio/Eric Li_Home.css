@@ -1,0 +1,115 @@
+body {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.logo{
+	text-align: center;
+	margin-top: 160px;
+}
+
+.logo img{
+	height: 220px;
+}
+
+.logo:hover {
+	cursor: pointer;
+}
+
+.name{
+	text-align: center;
+	margin-top: 20px;
+}
+
+.name #first_name {
+	font-family: 'Avenir LT Std';
+	font-size: 32px;
+	font-weight: 350;
+	margin-right: 3px;
+}
+
+.name #last_name {
+	font-family: 'Avenir LT Std';
+	font-size: 32px;
+	font-weight: 750;
+	margin-right: 8px;
+}
+
+.name #chinese_name {
+	font-family: 'Microsoft JhengHei UI';
+	font-size: 32px;
+}
+
+.name #first_name, .name #last_name, .name #chinese_name{
+	display: inline;
+}
+
+.category {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.archi #archi, .art #art{
+	font-family: 'Avenir LT Std';
+	font-size: 16px;
+	font-weight: 350;
+	margin-right: 5px;
+}
+
+.hci #hci{
+	font-family: 'Avenir LT Std';
+	font-size: 21px;
+	font-weight: 350;
+	margin-right: 8px;
+}
+
+.archi #archi_chi, .art #art_chi {
+	font-family: 'Microsoft JhengHei UI';
+	font-size: 18px;
+}
+
+.hci #hci_chi{
+	font-family: 'Microsoft JhengHei UI';
+	font-size: 24px;
+}
+
+.archi #archi, .archi #archi_chi {
+	display: inline;
+}
+
+.art #art, .art #art_chi {
+	display: inline;
+}
+
+.hci #hci, .hci #hci_chi {
+	display: inline;
+}
+
+.archi, .hci {
+	margin-right: 30px;
+}
+
+.archi, .hci, .art{
+	display: inline-block;
+	text-decoration: none;
+	color: black;	
+}
+
+.grow { 
+	transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+	transform: scale(1.2); 
+	cursor: pointer;
+}

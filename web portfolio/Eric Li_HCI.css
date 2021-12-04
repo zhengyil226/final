@@ -1,0 +1,177 @@
+.content {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+  
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+.navBar {
+    display: flex;
+    position: fixed;
+    width: 20%;
+    flex-direction: column;
+}
+
+.logo {
+    margin-top: 40px;
+    margin-left: 40%;
+    margin-bottom: 20px;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+
+.about, .hci, .archi, .art, .other, .resume{
+    margin-bottom: 40px;
+    margin-left: 40%;
+    font-family: 'Avenir LT Std';
+    font-size: 16px;
+    font-weight: 350;
+    text-decoration: none;
+    color: black;
+}
+
+.about:hover, .hci:hover, .archi:hover, .art:hover, .other:hover, .resume:hover, .back:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+
+.hci {
+    font-weight: 750;
+}
+
+.line1{
+    margin-left: 40%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #D2D2D2;
+    width: 120px;
+    height: 0px;
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    margin-left: 25%;
+    margin-top: 40px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cate1, .cate2, .cate3, .back {
+    flex: 100%;
+    font-family: 'Avenir LT Std';
+    font-size: 18px;
+    font-weight: 350;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.proj1, .proj2, .proj3, .proj4, .proj5, .proj6, .proj7, .proj8 {
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+#name1, #name2, #name3, #name4, #name5, #name6, #name7, #name8{
+    font-family: 'Avenir LT Std';
+    font-size: 13px;
+    font-weight: 750;
+    margin-right: -5px;
+}
+
+#desc1, #desc2, #desc3, #desc4, #desc5, #desc6, #desc7, #desc8{
+    font-family: 'Avenir LT Std';
+    font-size: 13px;
+    font-weight: 350;
+}
+
+.text1, .text2, .text3, .text4, .text5, .text6, .text7, .text8{
+    margin-top: 10px;
+    text-align: center;
+}
+
+#name1, #desc1{
+    display: inline-block;
+}
+
+#name2, #desc2{
+    display: inline-block;
+}
+
+#name3, #desc3{
+    display: inline-block;
+}
+
+#name4, #desc4{
+    display: inline-block;
+}
+
+#name5, #desc5{
+    display: inline-block;
+}
+
+#name6, #desc6{
+    display: inline-block;
+}
+
+#name7, #desc7{
+    display: inline-block;
+}
+
+#name8, #desc8{
+    display: inline-block;
+}
+
+.back{
+    text-align: center;
+}
+
+
+@media (max-width: 1000px) {
+    .navBar{
+        display: none;
+    }
+    .content{
+        margin-left: 10%;
+    }
+}
+
+.grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 24px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: white;        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #DFDFDF;    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+  border: 8px solid white;  /* creates padding around scroll thumb */
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
